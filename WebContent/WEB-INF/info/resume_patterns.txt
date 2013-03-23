@@ -1,0 +1,17 @@
+websiteWorkUa = a[^<>]+href="(http://www.work.ua/resumes/\d+[^"\s<>]+)
+subscribeJobUkrNet = a[^<>]+href="(http://job.ukr.net/resume/\w+-[^"\s<>]+)
+subscribeJobsUa = a[^<>]+href="(http://www.jobs.ua/minicv/view/[^"\s<>]+)
+
+paternNameWorkUa = a\sname="info".+<h1>(.+)</h1>
+paternSalaryWorkUa = a\sname="info".+</h1>.+&nbsp;(.+)&nbsp;(.+)/мес.+<div class="shortInfo
+paternCityWorkUa = div\sclass="shortInfo".+Город:.+<dd>.*(location).*</dd>
+paternCTechnology = span>Контактная информация.+[^a-zA-Z0-9](technology)[/(<\s;,.].+<div class="bottom
+
+paternSalaryUkrNet = div\sclass="payment".+<h2>(.+)<span>(.+)/мес</span>
+paternCityUkrNet = Командировки.+<div class="value">.*(location).*</div>.+Ищу работу в городе:</span>
+paternCTechnology = Ключевая информация.+[^a-zA-Z0-9](technology)[/(<\s;,.].+График работы
+
+paternNameJobsUa = ul\sclass="viewcontcenter.+<li>(.+)</li>.+<li>\d+\.\d+.+</li>
+paternSalaryJobsUa = ul\sclass="viewcontcenter.+<li>\d+\.\d+.+</li>.+<li>(\d+)\s*(.*)</li>.+</li>.+div class="viewcontright
+paternCityJobsUa = div\sclass="post_vac.+Резюме.+\((location)\)</h1>.+<div class="view
+paternTechnologyJobsUa = h2>Профессиональные навыки.+[^a-zA-Z0-9](technology)[/(<\s;,.].+<h2>Образование

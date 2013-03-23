@@ -1,0 +1,443 @@
+* {
+	padding: 0;
+}
+
+body,th,td,input,textarea {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+
+}
+
+h1,h2 {
+	margin-top: 1.5em;
+	color: #2C5C89;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #2C5C89;
+}
+
+
+ul,ol {
+	margin-left: 3em;
+}
+
+a {
+	text-decoration: underline;
+
+}
+
+a:hover {
+	border: none;
+	text-decoration: none;
+}
+
+h1 a,h2 a {
+	border: none;
+	text-decoration: none;
+	color: #2C5C89;
+}
+
+h1 a:hover,h2 a:hover {
+	background: none;
+	color: #2C5C89;
+}
+
+
+
+#loginstatus {
+	margin-left: 15px;
+	font-size: 15px;
+	border: medium none;
+	color: #FFFFFF;
+}
+/* Wrapper */
+#wrapper {
+	
+}
+
+/* Header */
+#header {
+	width: 1000px;
+	margin: 0 auto;
+	height: 315px;
+}
+
+#menu {
+	float: left;
+	height: 35px;
+	padding-top: 10px;
+	padding-left: 14px;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	float: left;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	height: 35px;
+	width: 115px;
+	margin-right: 1px;
+	text-decoration: none;
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #ffffff;
+	padding-top: 10px;
+	text-align: center;
+	background: url(img/button.jpg) no-repeat
+}
+
+#menu a:hover {
+	color: #2C2E22;
+}
+
+/* Logo */
+#logo {
+	width: 1000px;
+	height: 270px;
+	margin: 0 auto;
+	background: url(img/header.jpg) no-repeat left top;
+}
+
+#logo h1 {
+	padding-top: 100px;
+	padding-left: 20px;
+	color: #ffffff;
+	font-size: 24px;
+}
+
+#logo h2 {
+	font-style: italic;
+	font-size: 10px;
+	padding-left: 20px;
+}
+
+#logo p {
+	clear: left;
+	margin: 0;
+	padding: 0 0 0 20px;
+	line-height: normal;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+#logo a {
+	color: #FFFFFF;
+}
+
+/* Page */
+#page {
+	width: 1000px;
+	margin: 0 auto;
+	background: #DAD7D4;
+	border-left: 1px solid #000000;
+	border-top: none;
+	padding-top: 20px;
+}
+
+/* Content */
+#content {
+	float: left;
+	width: 550px;
+	padding-left: 10px;
+}
+
+.post {
+	
+}
+
+.post .title {
+	margin: 0;
+	font-weight: normal;
+}
+
+.post h1.title {
+	height: 30px;
+	font-size: 2.4em;
+}
+
+.post .entry {
+	padding: 0 10px 30px 15px;
+}
+
+.post .meta {
+	margin: 0;
+	padding: 5px 0px 0px 15px;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #2C5C89;
+}
+
+.post .meta a {
+	color: #2C5C89;
+}
+
+.post .links {
+	margin: 0;
+}
+
+.post .tags {
+	margin: 0;
+	text-transform: uppercase;
+	font-size: .8em;
+	font-weight: bold;
+}
+
+.post .links a,.post .tags a {
+	border: none;
+}
+
+/* Sidebars */
+.sidebar {
+	float: right;
+}
+
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.sidebar li {
+	margin-bottom: 2em;
+}
+
+.sidebar li ul {
+	
+}
+
+.sidebar li li {
+	margin: 0;
+}
+
+.sidebar li h2 {
+	margin: 0 0 1em 0;
+}
+
+#sidebar1 {
+	width: 224px;
+	padding: 0px 0px 0px 20px;
+}
+
+#sidebar2 {
+	width: 224px;
+	padding: 0px 20px 0px 20px;
+}
+
+#sidebar2 li h2 {
+	margin: 0 0 1em 0;
+	background: url(img/title.jpg) no-repeat left top;
+	height: 35px;
+	color: #FFFFFF;
+	padding-left: 20px;
+	padding-top: 7px;
+}
+
+#sidebar2 li ul {
+	line-height: normal;
+}
+
+#sidebar2 li li {
+	padding: 5px;
+	font-size: .8em;
+}
+
+#sidebar2 li a {
+	border: none;
+	padding-left: 10px;
+}
+
+#sidebar2 li a:hover {
+	border: none;
+	padding-left: 10px;
+}
+
+/* Footer */
+#footer {
+	padding: 20pxf;
+}
+
+#footer p {
+	text-align: center;
+	font-size: 9px;
+	color: #ffffff;
+	margin: 0px;
+	padding: 0px;
+}
+
+#footer a {
+	color: #FFFFFF
+}
+/* root element for tabs  */
+.tabs {
+	list-style: none;
+	margin: 0 !important;
+	padding: 0 0 0 10px;
+	height: 30px;
+	border-bottom: 4px solid #000000;
+}
+
+/* single tab */
+.tabs li {
+	float: left;
+	text-indent: 0;
+	padding: 0;
+	margin: 0 0 0 2px;
+	list-style-image: none !important;
+}
+
+/* link inside the tab. uses a background image */
+.tabs a {
+	color: #cccccc;
+	background: url(img/sprite1.png) no-repeat 0 0;
+	font-size: 10px;
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	width: 60px;
+	text-align: center;
+	text-decoration: none;
+	padding: 0px;
+	margin: 0px ;
+	position: relative;
+	top: 1px;
+}
+
+.tabs a.current {
+	background: url(img/sprite1.png) no-repeat 0 -60px;
+	color: #cccccc;
+}
+
+.tabs a.current:hover {
+	background: url(img/sprite1.png) no-repeat 0 -60px;
+	color: #cccccc;
+}
+
+/* when mouse enters the tab move the background image */
+.tabs a:hover {
+	background: url(img/sprite1.png) no-repeat 0 -30px;
+}
+
+/* active tab uses a class name "current". it's highlight is also done by moving the background image. */
+.tabs .current,.tabs .current:hover,.tabs li.current a {
+	cursor: default !important;
+	color: #cccccc !important;
+}
+
+/* initially all panes are hidden */
+.panes .pane {
+	display: block;
+}
+
+
+/*   table  */
+table,th,td { /*    border-collapse:collapse;*/
+	/*border: 1px solid #666666;*/
+}
+
+th,td {
+	padding: 5px;
+	text-align: center;
+}
+
+th {
+	font-weight: bold;
+	background:  url(img/title.jpg) no-repeat left top;
+}
+
+td {
+    height: 30;
+    overflow:auto;
+    
+}
+
+th a {
+	color: white;
+}
+
+th {
+	color: blue;
+}
+
+tr:hover {
+	background-color: #7292b0;
+}
+
+tr:hover td {
+	color: #5C85FF;
+}
+
+td img {
+	border: none;
+}
+
+td:hover {
+	background-color: #2C5C89;
+}
+
+td:hover a {
+	color: grey;
+}
+
+/**----------sidebar 2------------***/
+.label {
+font-size:100%;
+    margin:5px 0;
+    
+}
+
+#refresh {
+	float:right;
+}
+
+#statparam {
+	float:left;
+}
+
+#simple {
+    border: none;	
+}
+#simple2 td,#simple2{
+    border: none;
+}
+#simple2 tr:HOVER {
+    background-color: transparent;
+}
+#simple2 td:HOVER {
+    background-color: transparent;
+}
+.setingsdiv{
+    float: left; 
+    margin: 1 10px;
+}
+#loadImg{
+	position:absolute; 
+	z-index:1000; 
+	display:none
+}
+#filterb {
+	color: white;
+	border: 0px solid #666666;
+	padding: 3px;
+    text-align: center;
+    font-weight: bold;
+    background: #3366FF url(img/title.jpg) no-repeat left top;
+}

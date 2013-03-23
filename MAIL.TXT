@@ -1,0 +1,5 @@
+resume_soft@ukr.net
+butterfly
+
+ERROR: org.springframework.web.context.ContextLoader - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'page' defined in BeanDefinition defined in file [C:\java\apache-tomcat-7.0.22\wtpwebapps\CVTracker\WEB-INF\classes\org\ss\cvtracker\service\Page.class]: Initialization of bean failed; nested exception is org.springframework.aop.framework.AopConfigException: Could not generate CGLIB subclass of class [class org.ss.cvtracker.service.Page]: Common causes of this problem include using a final class or a non-visible class; nested exception is net.sf.cglib.core.CodeGenerationException: java.lang.NullPointerException-->null

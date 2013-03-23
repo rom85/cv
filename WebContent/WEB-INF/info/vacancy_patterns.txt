@@ -1,0 +1,18 @@
+websiteWorkUa = a[^<>]+href="(http://www.work.ua/jobs/\d+[^"\s<>]+)
+subscribeJobUkrNet = a[^<>]+href="(http://job.ukr.net/vacancy/\w+-[^"\s<>]+)
+subscribeJobsUa = a[^<>]+href="(http://www.jobs.ua/vacancy/view/[^"\s<>]+)
+
+paternCompanyNameWorkUa = Компания.+>(.+)</a></b>
+paternSalaryWorkUa = p class="salaryJob.*>(\d+)\s*(.+)</p>.*<div class="shortInfo
+paternVacancyWorkUa = onclick=".+signJSA.+search':'(.+)'\S*,.*job.*</div><div id="sign_err
+paternLocationWorkUa = dt>Город:</dt><dd>(location)</dd>.*<dt>Вид занятости
+
+paternCompanyNameUkrNet = href.+">(.+)</a>\s*</span>\s*</div>\s*<div class="parameters
+paternSalaryUkrNet = span class="salary\">\s*<b>(.+)</b>\s*(.*)/мес.+<span class="companyName
+paternVacancyUkrNet = div style="padding.+<h1>(.+)</h1>.*<span class="companyName
+paternLocationUkrNet = class="fieldName">Регион.+fieldValue">(.+)</span>\s*<a href.+class="smallLink
+
+paternCompanyNameJobsUa = class="viewcontcenter">\s*<li><a href.+>(.+)</a></li>\s*<li><a\s*href
+paternSalaryJobsUa = class="viewcontcenter">.+<li><span>(\d*)\s*(.+)</span></li>
+paternVacancyJobsUa = viewcontcenter.+<li>(.+)</li>\s*</ul>\s*.+class="viewcontright
+paternLocationJobsUa = class="viewcontcenter.+<li><a\s*href="/city.+">(location)</a></li>.+class="viewcontright

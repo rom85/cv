@@ -1,0 +1,43 @@
+
+/*Setting tab-menu*/
+
+.tab_button {
+text-decoration: none;
+background: #f7f7f9;
+border: 1px #bbbbcc solid;
+border-bottom: none;
+padding: 10px 14px
+}
+
+#tabs_block {
+	width: 70%;
+}
+
+#tabs_block_2 {
+	float:left;
+	width: 536px;
+	height: 500px;
+	background:#f0f8ff;	
+}
+
+#tabs_block_3 {
+	float:right;
+	width: 536px;
+	height: 500px;
+	background:#f0f8ff;	
+}
+
+.tabs_bar {				
+	margin: auto;
+	padding: 0px;
+	display:block;
+	height:45px;
+	width:140px;
+	text-align: center;
+	font-family:sans-serif;
+	font-weight:bold;
+	font-size:22px;
+	text-decoration:none;
+	background-color:#e6e6fa;
+	color:#000659;
+}

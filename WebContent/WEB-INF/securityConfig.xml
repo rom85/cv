@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+	xmlns:beans="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/security
+           http://www.springframework.org/schema/security/spring-security-3.0.3.xsd">
+
+
+	<http auto-config='true'>
+		<intercept-url pattern="/login.jsp*" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+		<intercept-url pattern="/resources/**" filters="none" />
+		<intercept-url pattern="/doc/**" filters="none" />
+		<intercept-url pattern="/error.jsp" filters="none" />
+		<intercept-url pattern="/test/**" filters="none"/>
+		<intercept-url pattern="/**" access="ROLE_USER" />
+		    				
+		<form-login login-page="/login.jsp"
+			authentication-failure-url="/login.jsp?login_error=1" />
+		<logout logout-url="/logout" />
+		<remember-me user-service-ref="myUserDetailsService" />
+
+	</http>
+	
+    <authentication-manager>
+		<authentication-provider user-service-ref='myUserDetailsService'>
+		<password-encoder hash="md5" />
+			
+		</authentication-provider>
+	</authentication-manager>  
+
+	
+
+	<beans:bean id="myUserDetailsService"
+		class="org.ss.cvtracker.service.UserDetailsServiceImpl"></beans:bean>
+		
+ 
+
+</beans:beans>
